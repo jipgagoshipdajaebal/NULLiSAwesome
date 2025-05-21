@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>무진이 바보</title>
+    <title>무진이 천재</title>
     <link rel="stylesheet" href="./style.css">
     <style>#inner {color: red;} </style>
+    <style>
+        .divAll .null {background-color: #000000;}
+        .divAll > .null {color:white;}
+        #div1 ~ .null {border-radius: 10px;}
+        #div1 + .null {border: 5px cyan solid;}
+    </style>
+    <style>
+        div {
+            background-color: rgb(192, 165, 250);
+            height: 30vh;
+        }
+        .div1 {border-radius: 100px;}
+        #div2 {font-weight: bolder;}
+    </style>
 </head>
-<body>
+<body>   
+    <div style="display: grid; grid-template-columns: 100px 200px;">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: yellow">2</div>
+        <div style="background-color: green;">3</div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div style="display: grid; grid-template-columns: 100px 200px;">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: yellow;">2</div>
+        <div style="background-color: green;">3</div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
     <div class="divAll">
         <div id="div1">Div 1</div>
         <div class="null">Div 2</div>
@@ -15,23 +42,11 @@
             <a class="null">Div B</a></div>
             <div class="null">Div 4</div>
     </div>
-    <style>
-        .divAll.null {background-color: red;}
-        .divAll > .null {color:white;}
-        #div1 ~ .null {border-radius: 10px;}
-        #div1 + .null {border: 5px black solid;}
-</style>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div class="div1">Div1</div>
     <div id="div2">Div 2</div>
     <div>Div 3</div>   
-    <style>
-        div {
-            background-color: orange;
-            height: 30vh;
-        }
-        .div1 {border-radius: 100px;}
-        #div2 {font-weight: bolder;}
-    </style>
+    
 <p style="color: yellow;">HTML에 직접 포함(인라인 스타일)</p>
 <p id="inner">HTML에 직접 포함(내부 스타일 시트)</p>
 <p id="outer">외부 CSS 불러오기(외부 스타일 시트)</p>
